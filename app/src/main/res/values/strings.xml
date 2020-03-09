@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Survey App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="survey_image">Survey Image</string>
+    <string name="start">Start</string>
+    <string name="write_comment">Write Comment</string>
+    <string name="add">Add</string>
+    <string name="about">About</string>
+    <string name="survey_menu">Survey Menu</string>
+    <string name="clear_survey">Clear survey</string>
+    <string name="clear_questions">Clear questions</string>
+    <string name="clear_answers">Clear answers</string>
+    <string name="results">Results</string>
+    <string name="new_survey">New Survey</string>
+    <string name="see_results">See Results</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="next">Next</string>
+    <string name="information">This is an application which facilitates the creation of surveys, since the user can add questions without any problem.
+        In addition, it includes the 5-star rating so that you can see how it seemed to the customer what was offered, as a product or an event. In the end,
+        you can see the results of each question and the 5-star rating.</string>
+    <string name="about_image">about</string>
+    <string name="your_rate_4_5">Your Rate: 4.5</string>
+    <string name="your_result_4_5">Your Result: 4.5</string>
+    <string name="survey_number_1">Survey Number: 1</string>
+    <string name="number">Number</string>
+    <string name="score">Score</string>
+    <string name="text">Text</string>
+    <string name="rate">Rating</string>
+    <string name="app_score">App Score</string>
+    <string name="number_of_surveys">Number of Surveys</string>
+</resources>

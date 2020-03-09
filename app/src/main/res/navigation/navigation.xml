@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.laboratorio6.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_surveyFragment"
+            app:destination="@id/surveyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_guessFragment"
+            app:destination="@id/guessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.laboratorio6.addQuestion.AddFragment"
+        android:label="add_fragment"
+        tools:layout="@layout/add_fragment" >
+        <action
+            android:id="@+id/action_addFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/surveyFragment"
+        android:name="com.example.laboratorio6.survey.SurveyFragment"
+        android:label="survey_fragment"
+        tools:layout="@layout/survey_fragment" >
+        <action
+            android:id="@+id/action_surveyFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.laboratorio6.results.ResultsFragment"
+        android:label="results_fragment"
+        tools:layout="@layout/results_fragment" >
+        <action
+            android:id="@+id/action_resultsFragment_to_showResultsFragment"
+            app:destination="@id/showResultsFragment" />
+        <action
+            android:id="@+id/action_resultsFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showResultsFragment"
+        android:name="com.example.laboratorio6.showResults.ShowResultsFragment"
+        android:label="show_results"
+        tools:layout="@layout/show_results" />
+    <fragment
+        android:id="@+id/guessFragment"
+        android:name="com.example.laboratorio6.guess.GuessFragment"
+        android:label="GuessFragment" />
+</navigation>
